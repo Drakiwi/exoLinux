@@ -15,3 +15,28 @@ cd ..
 pwd
 ln -s exo2 exo2-symlink
 ls -l
+
+Fichiers
+Créer un fichier vide : touch fichier.txt
+Afficher le contenu d'un fichier : cat fichier.txt
+Renommer ou déplacer un fichier : mv ancien_nom.txt nouveau_nom.txt
+Copier un fichier : cp fichier.txt copie.txt
+Supprimer un fichier : rm fichier.txt
+Ouvrir un fichier avec l'éditeur nano : nano fichier.txt
+Changer le propriétaire d'un fichier : chown utilisateur fichier.txt
+Changer le groupe d'un fichier : chgrp groupe fichier.txt
+Changer le propriétaire ET le groupe en même temps : chown utilisateur:groupe fichier.txt
+Changer les permissions d'un fichier : chmod 644 fichier.txt
+Rendre un script exécutable : chmod +x script.sh
+Créer un lien symbolique : ln -s fichier_cible lien_symbolique
+Dossiers
+Afficher le dossier courant : pwd
+Changer de dossier : cd nom_du_dossier
+Revenir au dossier parent : cd ..
+Revenir directement dans son dossier personnel : cd ~ (ou simplement cd)
+Créer un dossier : mkdir nom_du_dossier
+Créer un dossier et ses sous-dossiers en une seule commande : mkdir -p parent/enfant/petit-enfant
+Lister le contenu d'un dossier avec les détails et fichiers cachés : ls -la
+Copier un dossier et tout son contenu : cp -r dossier_source dossier_destination
+Supprimer un dossier vide : rmdir dossier
+Supprimer un dossier non vide et tout son contenu : rm -r dossier (ou rm -rf dossier pour forcer sans confirmation — à utiliser avec précaution)
