@@ -1,0 +1,17 @@
+cd ~
+mkdir -p exo/exo2
+ls -la exo
+sudo adduser exo2user
+sudo usermod -aG exo2user $USER
+newgrp exo2user
+groups
+cd ~/exo/exo2
+ls -la
+sudo chown exo2user:exo2user .
+ls -ld .
+chmod g+w .
+ls -ld .
+cd ..
+pwd
+ln -s exo2 exo2-symlink
+ls -l
